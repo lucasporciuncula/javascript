@@ -9,7 +9,7 @@ app.use(bodyParser.urlencoded({extended: true}))
 
 // vai abrir um ejs = html
 app.get("/lucas",(req,res) => {
-    nome = "Lucas"
+    nome = "lucas"
     console.log(nome)
     res.render("lucas", (nome))
 })
