@@ -22,4 +22,15 @@ app.post("/logando",(req,res) => {
     const usuario = req.body.usuario
     const senha = req.body.senha
     console.log(usuario)
-    if(usuario != "João" )
+    if(usuario != "João" || senha != "João"){
+        res.send("Senha errada tente novamente")
+        return
+    }else{
+        res.send("Você acertou a senha")
+        return
+    }
+})
+
+app.listen(3000,() => {
+    console.log("Servidor rodando em http://localhost:3000")
+})
