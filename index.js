@@ -18,7 +18,6 @@ app.get("/joao",(req,res) => {
     nome = "joao"
     console.log(nome)
     res.render("joao", {nome})
-    res.render("João", {nome})
 })
 
 // rotas aqui
