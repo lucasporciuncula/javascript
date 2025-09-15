@@ -11,7 +11,7 @@ app.use(bodyParser.urlencoded({extended: true}))
 app.get("/lucas",(req,res) => {
     nome = "lucas"
     console.log(nome)
-    res.render("lucas", (nome))
+    res.render("lucas", {nome})
 })
 
 app.get("/João",(req,res) => {
