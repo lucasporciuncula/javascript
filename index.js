@@ -17,7 +17,7 @@ app.get("/lucas",(req,res) => {
 app.get("/João",(req,res) => {
     nome = "João"
     console.log(nome)
-    res.render("João", (nome))
+    res.render("João", {nome})
 })
 
 // rotas aqui
